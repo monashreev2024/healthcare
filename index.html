@@ -1,0 +1,181 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityCare Hospital</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f7fa;
+            color: #263746;
+        }
+
+        header {
+            background: #087f8c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #075e68;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 14px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: #d9f3f3;
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #00000012;
+        }
+
+        h2 {
+            color: #087f8c;
+        }
+
+        .announcement {
+            background: #fff4d6;
+            padding: 15px;
+            border-left: 5px solid #e8a317;
+            margin: 12px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #087f8c;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #075e68;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CityCare Hospital</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="#doctors">Doctors</a>
+    <a href="#appointments">Appointments</a>
+    <a href="#announcements">Announcements</a>
+</nav>
+
+<section class="hero">
+    <h2>Online Hospital Appointment Portal</h2>
+    <p>Find doctors, check consultation timings, and explore available slots.</p>
+    <a class="btn" href="#appointments">View Appointment Slots</a>
+</section>
+
+<main class="container">
+    <section id="doctors">
+        <h2>Our Doctors</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Dr. Anitha Kumar</h3>
+                <p>Specialization: Cardiology</p>
+                <p>Consultation: 9:00 AM - 12:00 PM</p>
+            </article>
+
+            <article class="card">
+                <h3>Dr. Rahul Sharma</h3>
+                <p>Specialization: Dermatology</p>
+                <p>Consultation: 10:00 AM - 1:00 PM</p>
+            </article>
+
+            <article class="card">
+                <h3>Dr. Priya Menon</h3>
+                <p>Specialization: Pediatrics</p>
+                <p>Consultation: 2:00 PM - 5:00 PM</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="appointments">
+        <h2>Available Appointment Slots</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Cardiology</h3>
+                <p>Monday - Friday</p>
+                <p>9:00 AM, 10:00 AM, 11:00 AM</p>
+            </article>
+            <article class="card">
+                <h3>Dermatology</h3>
+                <p>Monday - Saturday</p>
+                <p>10:00 AM, 11:00 AM, 12:00 PM</p>
+            </article>
+            <article class="card">
+                <h3>Pediatrics</h3>
+                <p>Monday - Friday</p>
+                <p>2:00 PM, 3:00 PM, 4:00 PM</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="announcements">
+        <h2>Hospital Announcements</h2>
+        <div class="announcement">
+            <strong>Health Camp:</strong>
+            Free health check-up camp this Saturday.
+        </div>
+        <div class="announcement">
+            <strong>New Service:</strong>
+            Online consultation timings are now available.
+        </div>
+        <div class="announcement">
+            <strong>Important:</strong>
+            Patients should arrive 15 minutes before consultation.
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>CityCare Hospital | Contact: +91 98765 43210</p>
+    <p>Hospital Appointment Portal - DevOps CI/CD Project</p>
+</footer>
+
+</body>
+</html>
+```
