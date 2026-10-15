@@ -1,0 +1,34 @@
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hospital-appointment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hospital-appointment
+  template:
+    metadata:
+      labels:
+        app: hospital-appointment
+    spec:
+      containers:
+        - name: hospital-appointment
+          image: monashree1511/hospital-appointment:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 10
+```
